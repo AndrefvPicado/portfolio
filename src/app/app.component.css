@@ -29,3 +29,12 @@ li {
     margin-left: 10px;
     list-style-type: circle;
  }
+
+.github-icon {
+  transition: filter 0.2s ease-in-out;
+  filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(94%) contrast(95%);
+}
+
+.github-icon:hover {
+  filter: invert(31%) sepia(98%) saturate(1946%) hue-rotate(201deg) brightness(97%) contrast(107%);
+}

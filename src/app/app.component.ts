@@ -18,6 +18,7 @@ export class AppComponent {
   faDownload = faDownload;
 
   linkedinUrl = 'https://www.linkedin.com/in/andre-picado/';
+  githubUrl = 'https://github.com/AndrefvPicado';
   downloadResume() {
     console.log('downloadResumeCalled');
     window.open('assets/andre_picado_resume.pdf', '_blank');
