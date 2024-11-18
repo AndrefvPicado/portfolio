@@ -38,3 +38,28 @@ li {
 .github-icon:hover {
   filter: invert(31%) sepia(98%) saturate(1946%) hue-rotate(201deg) brightness(97%) contrast(107%);
 }
+
+.left-column {
+  position: fixed;
+  width: 33.333%;
+  height: 100vh;
+  left: 0;
+}
+
+.middle-column {
+  margin-left: 33.333%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 2rem;
+  max-width: calc(58.333% - 2rem);
+}
+
+.right-column {
+  width: 8.333%;
+}
+
+.main {
+  overflow-x: hidden;
+  width: 100%;
+}
