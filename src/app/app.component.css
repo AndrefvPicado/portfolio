@@ -28,7 +28,7 @@ li {
     font-size: 14px;
     margin-left: 10px;
     list-style-type: circle;
- }
+}
 
 .github-icon {
   transition: filter 0.2s ease-in-out;
@@ -39,27 +39,71 @@ li {
   filter: invert(31%) sepia(98%) saturate(1946%) hue-rotate(201deg) brightness(97%) contrast(107%);
 }
 
-.left-column {
-  position: fixed;
-  width: 33.333%;
-  height: 100vh;
-  left: 0;
+/* Base styles */
+.left-column, .middle-column, .right-column {
+  transition: all 0.3s ease;
 }
 
-.middle-column {
-  margin-left: 33.333%;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 2rem;
-  max-width: calc(58.333% - 2rem);
+/* Desktop styles (default) */
+@media (min-width: 768px) {
+  .left-column {
+    position: fixed;
+    width: 33.333%;
+    height: 100vh;
+    left: 0;
+  }
+
+  .middle-column {
+    margin-left: 33.333%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 2rem;
+    max-width: calc(58.333% - 2rem);
+  }
+
+  .right-column {
+    width: 8.333%;
+  }
+
+  .main {
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
-.right-column {
-  width: 8.333%;
-}
+/* Mobile styles */
+@media (max-width: 767px) {
+  .left-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: white;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
 
-.main {
-  overflow-x: hidden;
-  width: 100%;
+  .middle-column {
+    margin-top: 180px; /* Adjust based on your header height */
+    width: 100%;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .right-column {
+    display: none; /* Hide the spacing column on mobile */
+  }
+
+  .main {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Adjust the padding-top for mobile */
+  .pt-20 {
+    padding-top: 1rem;
+  }
 }
