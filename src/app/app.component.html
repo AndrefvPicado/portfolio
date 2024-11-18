@@ -1,0 +1,245 @@
+<main class="main font-inter">
+  <div class="w-100">
+    <div class="row w-100">
+      <div class="col-5 text-center h-screen flex flex-col pt-20">
+        <h1 class="text-3xl mb-0 shade-black">André Picado</h1>
+        <p class="text-sm grey-text">Software Engineer</p>
+        <div class="flex justify-center items-center">
+          <div class="me-2 grey-text">
+            <button (click)="downloadResume()">
+              <fa-icon [icon]="faDownload" matTooltip="Download Resume" class="blue-hover"></fa-icon>
+            </button>
+          </div>
+          <div class="ms-2 me-2 grey-text">
+            <a href="{{linkedinUrl}}" target="_blank" rel="noopener noreferrer" matTooltip="Open LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 pt-20">
+        <div>
+          <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">About</h1>
+          <p class="grey-text ps-4 pe-5 pt-2 text-sm mb-0">
+            I'm André Picado, a full stack software engineer. Interested in software and product development,
+            AI-driven decision making, and machine learning solutions.
+          </p>
+          <p class="grey-text ps-4 pe-5 pt-2 text-sm mb-0">
+            Master’s degree in machine learning and data science with research in recommendation systems,
+            content extraction and student temporal profiling.
+          </p>
+          <p class="grey-text ps-4 pe-5 pt-2 text-sm mb-0">
+            A goal-oriented team player known for commitment, innovative thinking and open-minded collaboration.
+            Currently looking for new adventures and working on personal projects to learn new things.
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">Work Experience</h1>
+          
+          <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+            <a href="http://banetech.net" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+                BaneTech
+            </a>
+            <span class="ps-2 grey-text">Software Engineer & Team Leader</span>
+          </p>
+          <p class="ps-3">
+            <span class="ps-2 grey-text text-sm">March 2024 - October 2024</span>
+          </p>
+        </div>
+        <div class="grey-text">
+          <ul class="ps-5">
+            <li class="p-1">Was involved in the creation and development of 3 products, a live monitoring application with integrated notifications, an AI
+              application for service and infrastructure management and a customized migration pricing calculator.</li>
+            <li class="p-1">Became a Scrum Master and leader of a 5 person team responsible for the frontend development of all products. While in this role I
+              welcomed and mentored 4 new developers.</li>
+            <li class="p-1">Managed communications with a client in the banking industry helping identify their needs and providing fast feedback and delivery.</li>
+            <li class="p-1">Lead stakeholder and product managers meetings to present product development status and discuss new features.</li>
+          </ul>
+        </div>
+
+
+      <div>
+        <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+          <a href="http://banetech.net" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+              BaneTech
+          </a>
+          <span class="ps-2 grey-text">Software Engineer</span>
+        </p>
+        <p class="ps-3">
+          <span class="ps-2 grey-text text-sm">October 2021 - March 2024</span>
+        </p>
+      </div>
+      <div class="grey-text">
+        <ul class="ps-5">
+          <li class="p-1">Full stack developer working on an existing product related with Enterprise Architecture, providing real time information using an
+            Event Driven Architecture. The tech stack included Angular with TypeScript, Node, MySQL databases and git.</li>
+        </ul>
+      </div>
+      
+      
+      <div class="pt-5">
+        <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">
+            Side Quests
+        </h1>
+        
+        <div class="grey-text">
+            <ul class="ps-5">
+                <li class="p-1">
+                    Implemented and deployed a <span class="font-semibold">language detection model</span> 
+                    using Scikit-learn, and FastAPI. Containerized the application with Docker
+                    and deployed it on Heroku, transitioning from a Jupyter Notebook prototype 
+                    to a scalable, production-ready solution.
+                </li>
+                
+                <li class="p-1">
+                    Developed a <span class="font-semibold">photo uploading app</span> allowing 
+                    authenticated users to upload photos, view their complete gallery, and inspect 
+                    individual photos in detail. Using React and Next.js for the frontend. The app 
+                    was deployed on Vercel and integrated with Clerk for user authentication and 
+                    management, PostHog for analytics, and Sentry for error monitoring.  
+                </li>
+                
+                <li class="p-1">
+                    Created a <span class="font-semibold">URL shortener service</span> using Go, 
+                    featuring concurrent processing for URL shortening and lookup with goroutines 
+                    and channels to handle high-load scenarios. Integrated PostgreSQL for persistent 
+                    data storage and Redis for caching, optimizing response times.
+                </li>
+            </ul>
+        </div>
+      </div>
+      
+
+	<div class="pt-5">
+		<h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">Education</h1>
+		
+		<p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+			<a href="https://tecnico.ulisboa.pt/en/" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+				IST
+			</a>
+			<span class="ps-2 grey-text">Master of Science - Computer Science and Engineering</span>
+		</p>
+		<p class="ps-3">
+			<span class="ps-2 grey-text text-sm">September 2020 - July 2022</span>
+		</p>
+		<div class="grey-text">
+			<ul class="ps-5">
+				<li class="p-1">
+					Master’s Degree with a specialization in Machine Learning and Data Science, 
+					having done a master’s thesis that involved research
+					and development of recommendation systems, content extraction from learning resources and 
+					student temporal profiling.
+				</li>
+			</ul>
+		</div>
+        <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+          <a href="https://tecnico.ulisboa.pt/en/" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+              IST
+          </a>
+          <span class="ps-2 grey-text">Bachelor of Science - Computer Science and Engineering</span>
+        </p>
+        <div class="grey-text">
+          <ul class="ps-5">
+            <li class="p-1">
+            Bachelor’s Degree with a special interest in linear algebra, calculus, data structures, algorithms, databases, software engineering,
+              distributed systems.
+          </li>
+        </ul>
+        </div>
+	</div>
+
+
+	<!-- Publications -->
+	<div class="pt-5">
+        <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">Publications</h1>
+        
+        <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+          <a href="https://ieeexplore.ieee.org/document/10031059" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+            IEEE International Conference on Data Mining Workshops
+          </a>
+        </p>
+        <div class="grey-text">
+          <ul class="ps-5">
+            <li class="p-1">
+              Picado, A. Antunes, C. Santos, A. M. Finamore, A. C. (2022). Students Temporal Profiling and e-Learning Resources
+              Recommendation Based on NLP’s Terms Extraction. IEEE International Conference on Data Mining Workshops
+          </li>
+        </ul>
+      </div>
+      <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+        <a href="https://inforum.org.pt/2022/sites/default/files/2022-09/Actas_INForum.pdf" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+          INForum
+        </a>
+    <div class="grey-text">
+      <ul class="ps-5">
+        <li class="p-1">
+          Picado, A. Antunes, C. Santos, A. M. Finamore, A. C. (2022). Students Temporal Profiling and e-Learning Resources
+            Recommendation Based on NLP’s Terms Extraction. INForum
+        </li>
+      </ul>
+      </div>
+    </div>
+
+
+
+    <!-- Volunteering -->
+    <div class="pt-5">
+      <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">Volunteering</h1>
+      
+      <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+        <a href="https://www.bancoalimentar.pt/" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+          Banco Alimentar Contra a Fome
+        </a>
+      </p>
+      <div class="grey-text">
+        <ul class="ps-5">
+          <li class="p-1">
+            Assisted in gathering and organizing food items for Lisbon’s largest food shelter
+        </li>
+      </ul>
+    </div>
+    <p class="ps-4 pe-5 pt-2 pb-0 mb-0">
+      <a href="https://www.coracoescomcoroa.org/" target="_blank" rel="noopener noreferrer" class="font-bold shade-black">
+        Corações Com Coroa
+      </a>
+  <div class="grey-text">
+    <ul class="ps-5">
+      <li class="p-1">
+        Helped disassemble and package hospital equipment from a decommissioned Portuguese hospital that was then sent to
+          Guiné-Bissau.
+      </li>
+      <li class="p-1">
+        Sold entries at the door of a charity concert event and helped explain the organization and purpose of the donations to guests.
+      </li>
+    </ul>
+      </div>
+    </div>
+
+
+
+	<div class="pt-5">
+        <h1 class="text-lg white-text bg-black w-fit ps-4 pe-4">
+            Skills
+        </h1>
+        
+        <div class="shade-black ps-4 pe-5 pt-2 pb-0 mb-0">
+            <p><span class="font-semibold">Technologies:</span> Angular, Node, Git, TypeScript, Python, SQL, Go, PyTorch, Scikit-Learn, D3, React, Next, Docker, Scrum</p>
+			<p><span class="font-semibold">Languages:</span> Portuguese (native), English (C2)</p>
+		</div>
+      </div>
+
+	  </div>
+
+    <div class="col-1"></div>
+    </div>
+  </div>
+
+
+
+
+</main>
+
+<router-outlet></router-outlet>
